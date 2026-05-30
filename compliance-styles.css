@@ -1,0 +1,89 @@
+/* ============================================
+   COMPLIANCE & TRANSPARENCY SECTIONS
+   ============================================ */
+.hero-compliance-note {
+  font-size: 12px;
+  color: var(--text-muted);
+  margin-top: 24px;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+}
+
+.two-column-content {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 40px;
+  margin-bottom: 40px;
+}
+
+.content-column {
+  padding: 0;
+}
+
+.column-title {
+  font-size: 22px;
+  font-weight: 700;
+  margin-bottom: 20px;
+  color: var(--text-primary);
+}
+
+.info-list {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.info-list li {
+  font-size: 15px;
+  color: var(--text-secondary);
+  padding-left: 24px;
+  position: relative;
+  line-height: 1.6;
+}
+
+.info-list li:before {
+  content: '✓';
+  position: absolute;
+  left: 0;
+  color: #5af78e;
+  font-weight: bold;
+}
+
+.info-list.negative li:before {
+  content: '✕';
+  color: #ff6b6b;
+}
+
+.compliance-banner {
+  background: linear-gradient(135deg, rgba(90,247,142,0.08) 0%, rgba(90,247,142,0.03) 100%);
+  border: 1px solid rgba(90,247,142,0.2);
+  border-radius: 16px;
+  padding: 24px;
+  margin-top: 40px;
+}
+
+.compliance-banner p {
+  font-size: 14px;
+  color: var(--text-secondary);
+  line-height: 1.8;
+}
+
+.compliance-banner strong {
+  color: #5af78e;
+}
+
+@media (max-width: 768px) {
+  .two-column-content {
+    grid-template-columns: 1fr;
+    gap: 32px;
+  }
+  
+  .column-title {
+    font-size: 18px;
+  }
+  
+  .info-list li {
+    font-size: 14px;
+  }
+}
